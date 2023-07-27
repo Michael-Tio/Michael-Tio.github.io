@@ -1,0 +1,74 @@
+.page-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    gap: 6.25rem;
+}
+.page-4 .projects .project .text h2{
+    color: #1E3D59;
+}
+.projects{
+    display: grid;
+    row-gap: 5rem;
+}
+.project{
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+.project .text{
+    width: 31.375rem;
+}
+
+.project .image, .project .image img, .project .image .more{
+    width: 29.75rem;
+    height: 17rem;
+}
+
+.project .image{
+    background-color: white;
+    position: relative;
+}
+.project .image .more{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Initially hide .more */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Add transition for smooth effect */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.project .image:hover .more{
+    opacity: 1;
+    visibility: visible;
+}
+
+.image .more button{
+    width: fit-content;
+    color: white;
+    background-color: #FF6E40;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+.image .more button:hover{
+    cursor: pointer;
+}
+.image .more button:active{
+    background-color: #df5d35;
+}
+
+.fit-cover{
+    object-fit: cover;
+}
+.fit-contain{
+    object-fit: contain;
+}

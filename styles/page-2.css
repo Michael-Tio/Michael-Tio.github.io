@@ -1,0 +1,26 @@
+.page-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card{
+    width: 70vw;
+    height: 70vh;
+    border: 4px solid #621F1F;
+    border-radius: 1.9375rem;
+    background-color: white;
+    padding: 2.875rem 4.9375rem 2.875rem 4.9375rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.about-card hr{
+    border: 2px solid black;
+    width: 65%;
+}
+.about-card p{
+    text-align: center;
+}

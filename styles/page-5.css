@@ -1,0 +1,64 @@
+.page-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    gap: 6.25rem;
+}
+
+.certificates{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.certs-item, .certs-item .item img, .certs-item .item .more{
+    width: 22rem;
+    height: 13.625rem;
+}
+
+.certs-item{
+    background-color: white;
+}
+.certs-item .item{
+    position: relative;
+}
+
+.certs-item .item .more {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+
+    /* Initially hide .more */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Add transition for smooth effect */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show .more when .item is hovered */
+.certs-item:hover .item .more {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item .more button{
+    color: white;
+    background-color: #FF6E40;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+.item .more button:hover{
+    cursor: pointer;
+}
+.item .more button:active{
+    background-color: #df5d35;
+}
